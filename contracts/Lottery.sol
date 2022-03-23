@@ -2,7 +2,7 @@
 pragma solidity ^0.8.13;
 
 contract Lottery {
-    address private manager; 
+    address public manager; 
     address[] private players;
 
     constructor() {
