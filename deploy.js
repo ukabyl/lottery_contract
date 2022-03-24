@@ -1,4 +1,3 @@
-require('dotenv').config();
 const Web3 = require('web3');
 const { evm: { bytecode: { object } }, abi } = require('./compile');
 const HDWalletProvider = require('truffle-hdwallet-provider');
