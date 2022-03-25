@@ -2,7 +2,8 @@ const Web3 = require('web3');
 const { evm: { bytecode: { object } }, abi } = require('./compile');
 const HDWalletProvider = require('truffle-hdwallet-provider');
 
-const provider = new HDWalletProvider(process.env.MnemonicPhrase, process.env.Endpoint);
+const provider = new HDWalletProvider(process.env.PrivateKey, process.env.Endpoint,);
+
 const web3 = new Web3(provider);
 
 async function deploy() {
